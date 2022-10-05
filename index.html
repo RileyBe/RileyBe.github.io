@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riley Belitz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/lilme.ico" type="image/x-icon">
+  </head>
+
+
+  <body>
+    <div class = 'Terminal'>
+      <div class="topbar">
+
+          <p>Riley Belitz</p>
+          <ul>
+            <li>-</li>
+            <li> &#9633; </li>
+            <li>x</li>
+          </ul>
+      </div>
+      <div class="typewindow">
+        <p id="title"class="animated">Riley's Portfolio Commands</p>
+        <p id = "name" class="animated">Name</p>
+        <p id="command" class="animated">Riley</p>
+        <p id="synopsis" class="animated">Synopsis</p>
+        <p id="options" class="animated">Riley [-about -skills -github]</p>
+        <p id="description" class="animated">Description</p>
+        <p id="about" class="animated">-about Displays info about Riley</p>
+        <p id="skills" class="animated">-skills Displays Riley's skills</p>
+        <p id="github" class="animated">-github Displays Riley's github</p>
+        <p id="execute" class="animated">C:\Riley <button onclick="about()">[-about]</button> <button onclick="skills()">[-skills]</button> <button onclick="github()">[-github]</button>
+        <p class="aboutDis lower">Hi, I'm Riley Belitz. </p>
+        <p class="aboutDis lower">I am an avid outdoorsman who enjoys climbing, hiking, backpacking, travelling, and generally risking my life in the backcountry. Professionally I am in my senior year of a computer science degree, with a focus on CyberSecurity. For a list of my technological skills, execute the [-skills] command.</p>
+        <p class="skills lower">As you can tell by the lackluster website before you I am a backend developer. I specialize in making things work rather than coming up with the things themselves. I consider myself a good problem solver, a quick learner, and good teamate. I have never met a computer skill I couldn't learn and I am confident in my ability to adapt to any role in the IT space.</p>
+        <p class="skills lower">Languages I consider myself proficient in at the moment: Python, ASM, Java, Javscript, HTML, CSS. </p>
+        <p class="skills lower">Languages and Frameworks I am learning at the moment:C, C++, C#, React, Django, Flask.</p>
+        <p class="github lower"><a href="https://github.com/RileyBe" target="_blank" rel="noopener noreferrer">https://github.com/RileyBe</a></p>
+      </div>
+      <script>
+        function about() {
+          var other = document.getElementsByClassName('lower');
+          for (var i=0;i<other.length;i+=1){
+            other[i].style.display = 'none';
+          }
+          var tobe = document.getElementsByClassName('aboutDis');
+          for (var i=0;i<tobe.length;i+=1){
+            tobe[i].style.display = 'block';
+          }
+        }
+        function skills() {
+          var other = document.getElementsByClassName('lower');
+          for (var i=0;i<other.length;i+=1){
+            other[i].style.display = 'none';
+          }
+          var tobe = document.getElementsByClassName('skills');
+          for (var i=0;i<tobe.length;i+=1){
+            tobe[i].style.display = 'block';
+          }
+        }
+        function github() {
+          var other = document.getElementsByClassName('lower');
+          for (var i=0;i<other.length;i+=1){
+            other[i].style.display = 'none';
+          }
+          var tobe = document.getElementsByClassName('github');
+          for (var i=0;i<tobe.length;i+=1){
+            tobe[i].style.display = 'block';
+          }
+        }
+      </script>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,191 @@
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #d1d1d1;
+  display: block;
+  font-family: consolas;
+}
+
+.Terminal {
+  width: 1000px;
+  height: 600px;
+  background-color: #0c0c0c;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 11px 15px 5px rgba(0,0,0,0.43);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 11px 15px 5px rgba(0,0,0,0.43);
+  animation: open-up 0.5s ease;
+}
+
+@keyframes open-up {
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.topbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+    height: 30px;
+    padding: 0 auto;
+}
+
+
+.topbar p {
+    margin: 0 0 0 5px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 2px 5px 5px 2px;
+    color: #FFFFFF;
+
+}
+
+.topbar ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+.topbar li {
+  color: white;
+  display: inline-block;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.typewindow {
+  margin: 0 5px 0 5px;
+  padding: 0;
+  margin: 0;
+  display: block;
+  overflow:hidden;
+}
+
+#disWindow{
+  width: 1000px;
+  height: 300px;
+}
+
+.animated {
+  height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 18px;
+  color: #FFFFFF;
+  display: block;
+  margin: 0;
+}
+
+
+.animated {
+  animation: animated-text 1s steps(30,end) 1s 1 normal both
+}
+
+#title {
+  margin-left: 350px;
+  width: 300px;
+}
+
+#name {
+  margin-left: 10px;
+  animation-delay: 1.5s;
+}
+
+#command {
+  margin-left: 30px;
+  animation-delay: 2s;
+}
+
+#synopsis {
+  margin-left: 10px;
+  animation-delay: 2.5s;
+}
+
+#options {
+  margin-left: 30px;
+  animation-delay: 3s;
+}
+
+#description {
+  margin-left: 10px;
+  animation-delay: 3.5s;
+}
+
+#about {
+  margin-left: 30px;
+  animation-delay: 4s;
+}
+
+#skills {
+  margin-left: 30px;
+  animation-delay: 4.5s;
+}
+
+#github {
+  margin-left: 30px;
+  animation-delay: 5s;
+}
+
+#execute {
+  animation-delay: 5.5s;
+}
+#execute button {
+  background-color: #0c0c0c;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  height: 100%;
+}
+
+.aboutDis {
+  color: white;
+  font-size: 18px;
+  display: none;
+  margin-left: 10px;
+  white-space: normal;
+  margin-top: 10px;
+
+}
+
+.skills {
+  color: #FFFFFF;
+  font-size: 18px;
+  display: none;
+  margin-left: 10px;
+  white-space: normal;
+  margin-top: 10px;
+}
+
+.github {
+  color: #FFFFFF;
+  font-size: 18px;
+  display: none;
+  margin-left: 10px;
+  white-space: normal;
+  margin-top: 10px;
+}
+
+.github a:visited {
+  color: #FFFFFF;
+}
+
+.github a:hover {
+  color: #FFFFFF
+}
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 1000px;}
+}
