@@ -190,7 +190,12 @@ body {
   to{width: 1000px;}
 }
 @media only screen and (max-width: 1000px) {
+  body {
+    background-color: #0c0c0c; 
+  }
+  
   .Terminal {
+    margin-top: 5vh;
     width: 100%;
     height: 100vh;
   }
